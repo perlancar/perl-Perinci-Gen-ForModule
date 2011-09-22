@@ -112,6 +112,7 @@ sub gen_spec_for_module {
 }
 
 1;
+#ABSTRACT: Generate spec for subroutines in a module
 __END__
 
 =head1 SYNOPSIS
