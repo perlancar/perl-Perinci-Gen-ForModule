@@ -1,8 +1,8 @@
-Revision history for Perinci-Sub-Gen-ForModule
+Revision history for Perinci-Gen-ForModule
 
-0.03     2012-02-19 (not yet released)
+0.03     2012-03-29 (not yet released)
 
-         Rename dist from Sub-Spec-Gen-ForModule to Perinci-Sub-Gen-ForModule.
+         Rename dist from Sub-Spec-Gen-ForModule to Perinci-Gen-ForModule.
          Update to Rinci 1.1 specification.
 
 
