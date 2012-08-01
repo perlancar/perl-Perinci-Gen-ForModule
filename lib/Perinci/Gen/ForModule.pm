@@ -6,6 +6,7 @@ use warnings;
 
 use Exporter::Lite;
 use Log::Any '$log';
+use Scalar::Util qw(reftype);
 use SHARYANTO::Array::Util   qw(match_array_or_regex);
 use SHARYANTO::Package::Util qw(package_exists list_package_contents);
 
@@ -114,7 +115,7 @@ sub gen_meta_for_module {
 
     # generate subroutine metadatas
 
-    for my $sub (sort grep {ref($content{$_}) eq 'CODE'} keys %content) {
+    for my $sub (sort grep {reftype($content{$_}) eq 'CODE'} keys %content) {
         $log->tracef("Adding meta for subroutine %s ...", $sub);
         if (defined($inc) && !match_array_or_regex($sub, $inc)) {
             $log->info("Not creating metadata for sub $module\::$sub: ".
