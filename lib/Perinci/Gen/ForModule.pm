@@ -174,18 +174,6 @@ In another script:
 Now Foo::Bar has metadata stored in %Foo::Bar::SPEC.
 
 
-=head1 DESCRIPTION
-
-This module provides gen_meta_for_module().
-
-This module uses L<Log::Any> for logging framework.
-
-This module has L<Rinci> metadata.
-
-
-=head1 FAQ
-
-
 =head1 SEE ALSO
 
 L<Perinci>, L<Rinci>
