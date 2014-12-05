@@ -1,5 +1,18 @@
 Revision history for Perinci-Gen-ForModule
 
+0.04    2014-12-05 (PERLANCAR)
+
+	- No functional changes.
+
+	- Use the new renamed module SHARYANTO::Package::Util ->
+	  Package::MoreUtil.
+
+	- Remove 'promotional' 'This module uses {Log::Any,Rinci,Moo}
+	  module' messages, because Log::Any and Moo are now very popular
+	  already, and this message is redundant anyway (one can see deps
+	  in MetaCPAN etc).
+
+
 0.03     2012-03-29 (SHARYANTO)
 
          - Rename dist from Sub-Spec-Gen-ForModule to Perinci-Gen-ForModule.
