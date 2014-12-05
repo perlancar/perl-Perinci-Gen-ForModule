@@ -1,5 +1,8 @@
 package Perinci::Gen::ForModule;
 
+# DATE
+# VERSION
+
 use 5.010001;
 use strict;
 use warnings;
@@ -8,11 +11,9 @@ use Exporter::Lite;
 use Log::Any '$log';
 use Scalar::Util qw(reftype);
 use SHARYANTO::Array::Util   qw(match_array_or_regex);
-use SHARYANTO::Package::Util qw(package_exists list_package_contents);
+use Package::MoreUtil qw(package_exists list_package_contents);
 
 our @EXPORT_OK = qw(gen_meta_for_module);
-
-# VERSION
 
 our %SPEC;
 
