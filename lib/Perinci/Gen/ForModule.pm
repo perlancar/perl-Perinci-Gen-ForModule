@@ -156,7 +156,7 @@ sub gen_meta_for_module {
 }
 
 1;
-#ABSTRACT: Generate metadata for a module
+#ABSTRACT:
 
 =head1 SYNOPSIS
 
