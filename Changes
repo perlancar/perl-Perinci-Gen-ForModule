@@ -1,5 +1,14 @@
 Revision history for Perinci-Gen-ForModule
 
+0.05    2015-01-11 (PERLANCAR)
+
+	- No functional changes.
+
+        - Avoid perl undef warning, as well as switch from using
+          Scalar::Util::reftype() to ref() as I don't have a need to use
+          reftype().
+
+
 0.04    2014-12-05 (PERLANCAR)
 
 	- No functional changes.
