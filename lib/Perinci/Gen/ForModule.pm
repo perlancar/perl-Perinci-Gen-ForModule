@@ -102,7 +102,7 @@ sub gen_meta_for_module {
     if (keys %$metas) {
         $log->info("Not creating metadata for package $module: ".
                        "already defined");
-        [304, "Not modified"];
+        return [304, "Not modified"];
     }
 
     # generate package metadata
