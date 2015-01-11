@@ -1,5 +1,12 @@
 Revision history for Perinci-Gen-ForModule
 
+0.06    2015-01-11 (PERLANCAR)
+
+	- No functional changes.
+
+	- Now skip the whole package if %SPEC already has something.
+
+
 0.05    2015-01-11 (PERLANCAR)
 
 	- No functional changes.
