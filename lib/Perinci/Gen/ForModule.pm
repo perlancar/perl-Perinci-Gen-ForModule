@@ -99,22 +99,22 @@ sub gen_meta_for_module {
         $metas = \%{"$module\::SPEC"};
     }
 
-    # generate package metadata
-    if ($metas->{":package"}) {
+    if (keys %$metas) {
         $log->info("Not creating metadata for package $module: ".
                        "already defined");
-    } else {
-        $metas->{":package"} = {
-            v => 1.1,
-            summary => $module,
-            description => $note,
-        };
+        [304, "Not modified"];
     }
+
+    # generate package metadata
+    $metas->{":package"} = {
+        v => 1.1,
+        summary => $module,
+        description => $note,
+    };
 
     my %content = list_package_contents($module);
 
     # generate subroutine metadatas
-
     for my $sub (sort grep {ref($content{$_}) eq 'CODE'} keys %content) {
         $log->tracef("Adding meta for subroutine %s ...", $sub);
         if (defined($inc) && !match_array_or_regex($sub, $inc)) {
