@@ -6,9 +6,9 @@ package Perinci::Gen::ForModule;
 use 5.010001;
 use strict;
 use warnings;
+use Log::Any::IfLOG '$log';
 
 use Exporter::Lite;
-use Log::Any '$log';
 use SHARYANTO::Array::Util   qw(match_array_or_regex);
 use Package::MoreUtil qw(package_exists list_package_contents);
 
