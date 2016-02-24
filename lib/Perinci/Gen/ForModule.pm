@@ -8,10 +8,10 @@ use strict;
 use warnings;
 use Log::Any::IfLOG '$log';
 
-use Exporter::Lite;
 use SHARYANTO::Array::Util   qw(match_array_or_regex);
 use Package::MoreUtil qw(package_exists list_package_contents);
 
+use Exporter qw(import);
 our @EXPORT_OK = qw(gen_meta_for_module);
 
 our %SPEC;
