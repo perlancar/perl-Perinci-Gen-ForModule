@@ -1,5 +1,12 @@
 Revision history for Perinci-Gen-ForModule
 
+0.09    2016-06-14 (PERLANCAR)
+
+	- No functional changes.
+
+	- [dist] Replace Exporter::Lite with Exporter.
+
+
 0.08    2015-09-03 (PERLANCAR)
 
 	- No functional changes.
