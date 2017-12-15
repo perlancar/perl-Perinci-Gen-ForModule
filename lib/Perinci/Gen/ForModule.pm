@@ -8,7 +8,7 @@ use strict;
 use warnings;
 use Log::ger;
 
-use SHARYANTO::Array::Util   qw(match_array_or_regex);
+use String::Util::Match qw(match_array_or_regex);
 use Package::MoreUtil qw(package_exists list_package_contents);
 
 use Exporter qw(import);
